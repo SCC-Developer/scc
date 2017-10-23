@@ -1,3 +1,3 @@
 # SCC README
 
-Just testing this out.
+Project files for the new website.
