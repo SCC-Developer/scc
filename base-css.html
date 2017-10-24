@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>St. Clair College</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+      pre { background-color: #F6F6F6; padding: 10px;	border: 1px solid #b6b6b6; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <section>
+            <h1>Base CSS</h1>
+          </section>
+          <section>
+            <h2>Headings</h2>
+            <p>All HTML headings, <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code> are available.</p>
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+          </section>
+          <hr>
+          <section>
+            <h2>Display Headings</h2>
+            <h1 class="display-3">Display-3 Heading</h1>
+            <pre>&lt;h1 class="display-3"&gt;...&lt;/h1&gt;</pre>
+          </section>
+          <hr>
+          <section>
+            <h2>Body Copy</h2>
+            <p>The sites global default <code>font-size</code> is <strong>16px</strong>, with a <code>line-height</code> of <strong>1.5</strong>. This is applied to the <code>&lt;body&gt;</code> and all paragraphs. In addition, <code>&lt;p&gt;</code> (paragraphs) receive a bottom margin of their full line-height (1rem = 16px by default).</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo in blanditiis maiores quasi repellat nam inventore, recusandae unde voluptatem eos sint! Placeat quam, nobis, nisi exercitationem totam laboriosam animi odio.</p>
+            <p>Voluptate enim, consequatur est odit asperiores saepe ipsa unde, ut eaque atque repellat aliquam cupiditate fugiat sed adipisci mollitia, fugit dignissimos excepturi natus quaerat esse. Cum rerum nemo, dicta ad!</p>
+            <pre>&lt;p&gt;...&lt;/p&gt;</pre>
+
+            <h3>Lead Body Copy</h3>
+            <p>Make a paragraph stand out by adding <code>.lead</code>.</p>
+            <p class="lead">Lead Text. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum provident modi ipsam suscipit, pariatur aspernatur voluptates dolore porro minus exercitationem labore repellat doloremque iure cum itaque. Minus, necessitatibus in eveniet.</p>
+            <pre>&lt;p class="lead"&gt;...&lt;/p&gt;</pre>
+          </section>
+          <hr>
+          <section>
+            <h2>Lists</h2>
+            <h3>Unordered</h3>
+            <p>A list of items in which the order does <em>not</em> explicitly matter.</p>
+            <ul>
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>Consectetur adipiscing elit</li>
+              <li>Integer molestie lorem at massa</li>
+              <li>Facilisis in pretium nisl aliquet</li>
+              <li>Nulla volutpat aliquam velit
+                <ul>
+                  <li>Phasellus iaculis neque</li>
+                  <li>Purus sodales ultricies</li>
+                  <li>Vestibulum laoreet porttitor sem</li>
+                  <li>Ac tristique libero volutpat at</li>
+                </ul>
+              </li>
+              <li>Faucibus porta lacus fringilla vel</li>
+              <li>Aenean sit amet erat nunc</li>
+              <li>Eget porttitor lorem</li>
+            </ul>
+            <pre><ol><li>&lt;ul&gt;</li><li><span>  </span>&lt;li&gt;...&lt;/li&gt;</li><li>&lt;/ul&gt;</li></ol></pre>
+          </section>
+          <hr>
+          <section>
+            <h3>Buttons</h3>
+            <a href="#!" class="btn btn-primary">Button</a>
+            <a href="#!" class="btn btn-secondary">Button</a>
+            <a href="#!" class="btn btn-success">Button</a>
+            <a href="#!" class="btn btn-danger">Button</a>
+          </section>
+          <hr>
+          <section>
+            <h3>Tabs/Pills</h3>
+            <ul class="nav nav-pills nav-fill" id="courseTab" role="tablist" style="margin-bottom: 2rem;">
+              <li class="nav-item">
+                <a class="nav-link active" id="overview-tab" data-toggle="tab" href="#overview" role="tab" aria-controls="overview" aria-selected="true">Overview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="admissions-tab" data-toggle="tab" href="#admissions" role="tab" aria-controls="admissions" aria-selected="false">Admissions</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="courses-tab" data-toggle="tab" href="#courses" role="tab" aria-controls="courses" aria-selected="false">Courses</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="paying-tab" data-toggle="tab" href="#paying" role="tab" aria-controls="paying" aria-selected="false">Paying For College</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="more-tab" data-toggle="tab" href="#more" role="tab" aria-controls="more" aria-selected="false">More Info</a>
+              </li>
+            </ul>
+            <div class="tab-content" id="courseTabContent">
+              <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview-tab">
+                <h5>Program Overview</h5>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus accusantium facere est quas voluptatibus nobis pariatur nisi earum minus ducimus repudiandae molestias sint et voluptas exercitationem sit doloribus, vitae amet.</div>
+              <div class="tab-pane fade" id="admissions" role="tabpanel" aria-labelledby="admissions-tab">Eligendi in repudiandae dignissimos est vero, obcaecati numquam. Qui alias modi incidunt accusamus animi, deserunt culpa quas voluptatem id quos rerum amet asperiores laborum quae reiciendis nam, dolor quia? Reprehenderit?</div>
+              <div class="tab-pane fade" id="courses" role="tabpanel" aria-labelledby="courses-tab">Laborum illum saepe libero! Et rerum, mollitia nobis placeat maxime, quibusdam maiores totam tempore doloribus animi error quos, veniam quas dolore pariatur sint explicabo similique. Molestias eum, dolorem fugiat architecto.</div>            <div class="tab-pane fade" id="paying" role="tabpanel" aria-labelledby="paying-tab">Eligendi in repudiandae dignissimos est vero, obcaecati numquam. Qui alias modi incidunt accusamus animi, deserunt culpa quas voluptatem id quos rerum amet asperiores laborum quae reiciendis nam, dolor quia? Reprehenderit?</div>
+              <div class="tab-pane fade" id="more" role="tabpanel" aria-labelledby="more-tab">Laborum illum saepe libero! Et rerum, mollitia nobis placeat maxime, quibusdam maiores totam tempore doloribus animi error quos, veniam quas dolore pariatur sint explicabo similique. Molestias eum, dolorem fugiat architecto.</div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  </body>
+</html>
