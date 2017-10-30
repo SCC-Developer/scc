@@ -1,1 +1,70 @@
 // Custom Variables and Overrides
+
+$headline: "Montserrat", sans-serif;
+$sans: "Libre Franklin", sans-serif;
+
+$margin-head: 1.5rem;
+
+// Bootstrap Variable Overrides
+$black:   #1E1E1E;
+$white:   #FFFFFF;
+
+$yellow:  #FDC82F;
+$green:   #00693C;
+$gray:    #525252;
+$red:     #fa2020;
+
+$primary:       $green;
+$secondary:     $yellow;
+$success:       $green;
+$warning:       $yellow;
+$info:          $gray;
+$danger:        $red;
+
+$enable-rounded:            false;
+
+$spacer: 1rem;
+
+$body-color:                $black;
+
+$link-color:                $primary;
+$link-hover-color:          darken($link-color, 8%);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1600px  // Added extra grid-breakpoint
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1200px,  // default: 1140px
+  xxl: 1540px  // Added extra max-width
+);
+
+$font-size-base:              1rem; // Assumes the browser default, typically `16px`
+$font-family-base:            $sans;
+$h1-font-size:                $font-size-base * 3.5;
+$h2-font-size:                $font-size-base * 2.875;
+$h3-font-size:                $font-size-base * 2.25;
+$h4-font-size:                $font-size-base * 1.625;
+$h5-font-size:                $font-size-base * 1.3125;
+$h6-font-size:                $font-size-base * 1.125;
+$headings-margin-bottom:      $margin-head;
+$headings-font-family:        $headline;
+$headings-font-weight:        700;
+$headings-line-height:        1.1;
+
+$input-focus-border-color:    lighten($primary, 5%);
+
+$navbar-dark-color:                 $white;
+$navbar-dark-hover-color:           $secondary;
+$navbar-dark-active-color:          $secondary;
+$navbar-dark-disabled-color:        rgba($white,.25);
+// $navbar-dark-toggler-icon-bg:       str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$navbar-dark-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"), "#", "%23");
+$navbar-dark-toggler-border-color:  rgba($white,.25);
