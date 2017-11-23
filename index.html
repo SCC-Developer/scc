@@ -11,7 +11,7 @@
     <!-- MAKE SURE TO ADD PADDING TO THE BODY AND MAKE IT = TO THE HEIGHT OF THE HEADER -->
   </head>
   <body>
-    <header class="site-header fixed-top">
+    <header class="site-header"> <!-- Add fixed-top and uncomment js file to re-activate the headroom script -->
       <div class="subhead">
         <div class="container">
           <div class="row">
@@ -92,9 +92,12 @@
     </header>
 
     <main role="main">
-      <section class="hero">
-        <div class="container">
-          <h1>Journalism</h1>
+      <section class="hero d-flex" style="background-image: url(images/header-journalism-alt.jpg)">
+        <div class="page-header d-flex">
+          <div class="container d-flex align-self-end">
+            <h1>Journalism</h1>
+            <!-- <h1>Pre-Health Sciences Pathway to Advanced Diplomas and Degrees</h1> -->
+          </div>
         </div>
       </section>
 
@@ -115,37 +118,53 @@
         <div class="container">
           <div class="row">
             <!-- BEGIN SIDEBAR -->
-            <div class="col-md-4 order-sm-2 progInfo">
-              <div class="row">
-                <div class="col-md">
-                  <a href="#!" class="btn btn-primary btn-block">Apply Now</a>
-                </div>
-                <div class="col-md">
-                  <a href="#!" class="btn btn-primary btn-block">Request Info</a>
+            <div class="col-md-4 order-md-2 progInfo">
+              <div class="progInfo--btns">
+                <div class="row">
+                  <div class="col-md">
+                    <a href="#!" class="btn btn-primary btn-block">Apply Now</a>
+                  </div>
+                  <div class="col-md">
+                    <!-- <a href="#!" class="btn btn-primary btn-block">Request Info</a> -->
+                    <a href="#!" class="btn btn-info btn-block">Schedule a Visit</a>
+                  </div>
                 </div>
               </div>
-              <a href="#!" class="btn btn-info btn-block">Schedule a Visit</a>
+
               <div class="progInfo--details">
                 <div class="progInfo--details__code">
                   <strong>Program Code:</strong> B894
                 </div>
+                <div class="progInfo--details__length">
+                  2 year - Ontario College Diploma
+                </div>
                 <div class="progInfo--details__campus">
                   <a href="#!">MediaPlex - Downtown Windsor</a>
                 </div>
-                <div class="progInfo--details__start">
-                  <strong>Starts:</strong> September
-                </div>
-                <div class="progInfo--details__status status--open">
-                  <strong>Status:</strong> Open
+                <div class="progInfo--group">
+                  <div class="progInfo--details__start">
+                    <strong>Starts:</strong> September
+                  </div>
+                  <div class="progInfo--details__status">
+                    <strong>Status:</strong> <span class="status--open">Open</span>
+                  </div>
                 </div>
                 <div class="progInfo--details__school">
                   <a href="#!">School of Media/Art/Design</a>
                 </div>
+                <!-- <div class="progInfo--details__vlos">
+                  <a href="#!">Program Vocational Learning Outcomes</a>
+                </div> -->
                 <div class="progInfo--details__contact">
                   <strong>Contact:</strong>
                   Veronique Mandal <br>
-                  519-972-2727 ext. 4292 <br>
-                  <a href="mailto:vmandal@stclaircollege.ca">vmandal@stclaircollege.ca</a>
+                  519-972-2727 ext. 4292
+                  <div class="contact--email">
+                    <a href="mailto:vmandal@stclaircollege.ca">vmandal@stclaircollege.ca</a>
+                  </div>
+                  <div class="contact--email__mobile">
+                    <a class="btn btn-info btn-block btn-sm text-left" href="mailto:vmandal@stclaircollege.ca"><i class="fa fa-envelope fa-fw" aria-hidden="true"></i> Email</span></a>
+                  </div>
                 </div>
               </div>
               <div class="progInfo--video">
@@ -153,13 +172,21 @@
                   <iframe class="embed-responsive-item" src="//www.youtube.com/embed/TplX_KHuHdE?rel=0&wmode=opaque" allowfullscreen></iframe>
                 </div>
               </div>
-              <div class="progInfo--links">
-                <a href="#!"><img src="images/mediaplex.png" class="img-fluid" alt="The MediaPlex"></a>
+              <div class="progInfo--links text-center">
+                <ul class="progInfo--links__listing">
+                  <li>
+                    <a href="#!">
+                      <figure>
+                        <img src="images/mediaplex.png" class="img-fluid" alt="The MediaPlex">
+                      </figure>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
             <!-- END SIDEBAR -->
             <!-- BEGIN MAIN SECTION -->
-            <div class="col-md-8 order-sm-1">
+            <div class="col-md-8 order-md-1 progContent">
               <ul class="nav nav-pills nav-fill" id="courseTab" role="tablist" style="margin-bottom: 2rem;">
                 <li class="nav-item">
                   <a class="nav-link active" id="overview-tab" data-toggle="tab" href="#overview" role="tab" aria-controls="overview" aria-selected="true">Overview</a>
@@ -187,7 +214,7 @@
                   <p>Students will experience actual “on-deadline” news filing, be expected to adapt their story for multiple media deliveries and to back up their stories with photography, audio or video. Much of the course work is “in field,” and as such, students must be strong self-starters and motivated to seek out, interview and write stories on a frequent basis. Successful applicants will have a very strong interest in news and current affairs. They must have above average writing skills and the ability to meet deadlines while working under pressure. They should also have an innate sense of curiosity.</p>
 
                   <h4>Program Highlights</h4>
-                  <ul>
+                  <ul class="standard-list">
                     <li>2 media field placements</li>
                     <li>The MediaPlex is the only one of its kind in Canada and is equipped with state-of-the-art technology.</li>
                     <li>"Convergence" journalism is taught exclusively at this campus, providing students with employable skills for the newsrooms of the 21st century.</li>
@@ -204,6 +231,116 @@
                   <p>OSSD with the majority of courses at the College (C), University (U), University/College (M) or Open (O) level qualify for admission to this program.</p>
 
                   <p>Mature students - See <a href="#!">Admission Procedures</a> for details.</p>
+                </div>
+                <div class="tab-pane fade" id="courses" role="tabpanel" aria-labelledby="courses-tab">
+                  <h4>Courses</h4>
+                  <h6 class="semester">Semester 1</h6>
+                  <table class="table table-responsive-sm">
+                    <thead>
+                      <tr>
+                        <th scope="col">Code</th>
+                        <th scope="col">Title</th>
+                        <th scope="col">Credits</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td scope="row"><a href="#!">JRN135</a></td>
+                        <td>Intro. Desktop Publications</td>
+                        <td>3</td>
+                      </tr>
+                      <tr>
+                        <td scope="row"><a href="#!">JRN138</a></td>
+                        <td>Editing CP Style</td>
+                        <td>3</td>
+                      </tr>
+                      <tr>
+                        <td scope="row"><a href="#1">JRN152</a></td>
+                        <td>Digital Photojournalism I</td>
+                        <td>3</td>
+                      </tr>
+                      <tr>
+                        <td scope="row"><a href="#!">JRN155</a></td>
+                        <td>News Writing I</td>
+                        <td>4</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <h6 class="semester">Semester 2</h6>
+                  <table class="table table-responsive-sm">
+                    <thead>
+                      <tr>
+                        <th scope="col">Code</th>
+                        <th scope="col">Title</th>
+                        <th scope="col">Credits</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td scope="row"><a href="#!">JRN135</a></td>
+                        <td>Intro. Desktop Publications</td>
+                        <td>3</td>
+                      </tr>
+                      <tr>
+                        <td scope="row"><a href="#!">JRN138</a></td>
+                        <td>Editing CP Style</td>
+                        <td>3</td>
+                      </tr>
+                      <tr>
+                        <td scope="row"><a href="#1">JRN152</a></td>
+                        <td>Digital Photojournalism I</td>
+                        <td>3</td>
+                      </tr>
+                      <tr>
+                        <td scope="row"><a href="#!">JRN155</a></td>
+                        <td>News Writing I</td>
+                        <td>4</td>
+                      </tr>
+                      <tr>
+                        <td scope="row"><a href="#!">JFN419</a></td>
+                        <td>Digital Production-Video &amp; Radio Journalism</td>
+                        <td>2</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="tab-pane fade" id="paying" role="tabpanel" aria-labelledby="paying-tab">
+                  <h4>Your Investment</h4>
+                  <p>The standard tuition and compulsory fees for the current academic year:</p>
+                  <p>
+                    <a href="#!" class="btn btn-primary">2017-2018 Tuition Fees</a>
+                  </p>
+                  <p><strong>For programs with Experiential Learning (Work Placement/Internship):</strong> Costs for accommodation, if needed, travel and related expenses is at the student's own expense. It is recommended for most programs, that students have access to a laptop or desktop computer while away from home during experiential learning periods.</p>
+
+                  <p>Textbooks and other materials are in addition to <a href="#!">Tuition Fees</a>. Textbook prices may be found through the <a href="#!">Bookstore website</a>.</p>
+
+                  <p class="font-weight-bold font-italic">Please be aware that tuition and compulsory fees are subject to adjustment each year. The College reserves the right to change, amend or alter fees as necessary without notice or prejudice.</p>
+                </div>
+                <div class="tab-pane fade" id="more" role="tabpanel" aria-labelledby="more-tab">
+                  <h4>Career Opportunities</h4>
+                  <p>The opportunities for budding journalists are expanding significantly in traditional news reporting and photojournalism for print, radio and television. The web has opened new avenues for internet/digital news provider/ researcher, web site designer and convergence media professionals (providing stories to all media).</p>
+
+                  <h4>Additional Information</h4>
+                  <ul class="standard-list">
+                    <li>Program Physical Demands Analysis: <a href="#!">B894</a></li>
+                    <li><a href="#!">The MediaPlex Website</a> - Journalism students bring you breaking news and current affairs from Windsor, across Canada and around the world, as it affects people in our communities.</li>
+                    <li><a href="#!">Alumni Testimonial</a></li>
+                  </ul>
+
+                  <h4>Program Vocational Learning Outcomes</h4>
+                  <p class="font-weight-bold">Journalism (Ontario College Diploma) (MTCU Code 52006)</p>
+                  <p>The graduate has reliably demonstrated the ability to:</p>
+                  <ol class="standard-list">
+                    <li>Report on stories in an accurate, detailed, balanced, professional, and timely manner.</li>
+                    <li>Apply computer and technical skills to designated production and research functions in journalism.</li>
+                    <li>Function both independently and as a member of editorial and/or production teams.</li>
+                    <li>Analyze knowledge from communities, current events and public affairs, and history to interpret and express the context for designated journalism publications and/or productions.</li>
+                    <li>Develop strategies for personal and professional development.</li>
+                    <li>Comply with relevant Canadian legislation, standards, and the principles and practices of journalism.</li>
+                    <li>Write and edit content for the designated media platforms.</li>
+                    <li>Publish and/or broadcast content for the designated media platforms.</li>
+                    <li>Apply production skills and use production equipment in the preparation and distribution of content for the designated media platforms.</li>
+                  </ol>
                 </div>
               </div>
             </div>
@@ -255,11 +392,11 @@
       <div class="fineprint">
         <div class="container">
           <div class="row">
-            <div class="col-sm-12 col-lg-7">
-              <ul class="nav justify-content-center justify-content-lg-start">
-                <li class="nav-item"><a class="nav-link" href="#!">Contact Us</a></li>
-                <li class="nav-item"><a class="nav-link" href="#!">Site Map</a></li>
-                <li class="nav-item"><a class="nav-link" href="#!">Privacy Policy</a></li>
+            <div class="col-sm-12 col-lg-7 text-center text-lg-left">
+              <ul class="fineprint--menu">
+                <li><a href="#!">Contact Us</a></li>
+                <li><a href="#!">Site Map</a></li>
+                <li><a href="#!">Privacy Policy</a></li>
               </ul>
             </div>
             <div class="col-sm-12 col-lg-5 text-center text-lg-right">
@@ -279,6 +416,6 @@
     <script src="js/vendor/headroom.js"></script>
     <script src="js/vendor/jQuery.headroom.js"></script>
     <!-- Custom -->
-    <script src="js/active.js"></script>
+    <!-- <script src="js/active.js"></script> -->
   </body>
 </html>
