@@ -1,5 +1,28 @@
-// Custom Variables
+// Import Google Fonts
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin:300,300i,400,400i,600,600i,700,700i|Montserrat:600,600i,700,700i');
+
+// Custom variables to override the framework variables
 @import "custom";
 
-// Bring in Bootstrap
+// Bring in framework
 @import "vendor/bootstrap";
+@import "vendor/font-awesome";
+@import "vendor/headroom";
+
+// Modules
+@import "modules/variables";
+
+// Partials
+@import "partials/typography";
+@import "partials/universal";
+@import "partials/tables";
+@import "partials/header";
+@import "partials/navigation";
+@import "partials/breaking-news";
+@import "partials/hero";
+@import "partials/breadcrumbs";
+@import "partials/content";
+@import "partials/program-pages";
+@import "partials/footer";
+@import "partials/inline-elements";
+@import "partials/cta"; // Call-to-Actions

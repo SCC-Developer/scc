@@ -1,0 +1,64 @@
+// Universal styling
+
+body {
+  // padding-top: 12.625rem + $brdr-lg;  // Height of the <header> (170px = 10.625rem) + bottom border size (1rem). Needed due to the header being stuck to the top of the page
+  background-color: $sc-gray;
+}
+
+main {
+  background-color: $white;
+}
+
+.hero {
+  .page-header {
+    min-height: 30vh; // was 20vh
+
+    @include media-breakpoint-up(sm) {
+      min-height: 40vh;
+    };
+
+    @include media-breakpoint-up(md) {
+      min-height: 32.5vh;
+    };
+
+    @include media-breakpoint-up(lg) {
+      min-height: 45vh;
+    };
+  }
+}
+
+.content {
+  padding: $pad-standard 0;
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+ul {
+  padding-left: 2rem;
+}
+
+// Scale/hover effect for all images that are anchor links
+a {
+  figure {
+    overflow: hidden;
+    img {
+      transition: $trans-std;
+    }
+  }
+
+  @include hover-focus-active {
+    figure {
+      img {
+        transform: scale(1.05) rotate(-1deg);
+      }
+    }
+  }
+}
+
+// Add space after an image or anchor link if a paragraph follows it
+img + p,
+a + p {
+  margin-top: 1rem;
+}

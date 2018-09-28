@@ -36,7 +36,7 @@ $grid-breakpoints: (
   md: 768px,
   lg: 992px,
   xl: 1200px,
-  xxl: 1600px  // Added extra grid-breakpoint
+  xxl: 1400px  // Added extra grid-breakpoint
 );
 
 $container-max-widths: (
@@ -44,7 +44,7 @@ $container-max-widths: (
   md: 720px,
   lg: 960px,
   xl: 1200px,  // default: 1140px
-  xxl: 1540px  // Added extra max-width
+  xxl: 1320px  // Added extra max-width
 );
 
 $font-size-base:              1rem; // Assumes the browser default, typically `16px`

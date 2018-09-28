@@ -1,0 +1,56 @@
+// Custom Typography
+$fa: "FontAwesome";
+
+body {
+  font-weight: $fw-n;
+}
+
+.hero {
+
+  h1 {
+    letter-spacing: -0.1rem;
+    line-height: 1;
+    font-size: $font-size-base * 2;
+    @include media-breakpoint-up(md) {
+      font-size: $font-size-base * 3.5;
+    };
+  }
+}
+
+.breadcrumbs {
+  font-size: .875rem;
+}
+
+.progInfo {
+  strong,
+  &--btns {
+    text-transform: uppercase;
+  }
+
+  // &--details__vlos {
+  //   &::before {
+  //     font-family: $fa;
+  //     font-size: 1.5rem;
+  //   }
+  // }
+
+}
+
+.breadcrumbs,
+.content,
+.footer {
+  a {
+    font-weight: $fw-sb;
+  }
+}
+
+.fineprint {
+  font-size: .875rem;
+}
+
+.main--content {
+
+  h4 {
+    text-transform: capitalize;
+  }
+}

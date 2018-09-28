@@ -1,0 +1,60 @@
+// Custom header code
+
+.site-header {
+  background-color: $sc-gray;
+  color: $white;
+  border-bottom: $brdr-lg solid $sc-gold;
+
+  .subhead {
+    padding: 0.4375rem 0;
+    border-bottom: 1px solid rgba($white, 0.35);
+    font-size: .6875rem;
+    @include media-breakpoint-up(sm) {
+      font-size: 0.875rem;
+    }
+
+    button {
+      cursor: pointer;
+    }
+  }
+
+  .nav-link {
+    color: $white;
+    transition: $transition-base;
+    font-weight: $fw-sb;
+
+    @include hover-focus-active {  //mixin to change the hover, focus and active states of the links
+      color: $sc-gold;
+    }
+  }
+
+  .headerNav {
+    border-top: 1px solid $black;
+    font-size: 0.9375rem;
+
+    .navbar {
+      padding: 1.5rem 0;
+
+      &-brand {
+        width: 75%;
+        @include media-breakpoint-up(md) {
+          width: inherit;
+        }
+      }
+    }
+
+    .nav-link {
+      padding: $nav-link-padding-x ($nav-link-padding-y * 2);
+    }
+
+    .dropdown-menu {
+      font-size: 0.9375rem;
+    }
+
+    .dropdown-item {
+      font-weight: $fw-sb;
+    }
+
+  }
+
+}

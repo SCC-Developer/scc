@@ -1,0 +1,56 @@
+// Breaking News styling
+
+.breakingNews {
+  background-color: $secondary;
+  color: $black;
+  margin-bottom: -1rem;
+  overflow: hidden;
+  font-size: 1rem;
+  line-height: 1;
+  font-weight: 700;
+
+
+  &--title {
+    padding: 1rem;
+    line-height: 1.5;
+    background-color: rgba($black, .1);
+    text-align: center;
+  }
+
+  &--headline {
+    padding: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  &--button {
+    background-color: rgba($black, .1);
+    font-weight: 700;
+    text-align: center;
+
+    a {
+      display: block;
+      padding: 1.25rem 1.5rem;
+      color: $black;
+
+      @include hover-focus-active {
+        text-decoration: none;
+      }
+    }
+
+    @include hover-focus-active {
+      background-color: rgba($black, .15);
+    }
+  }
+
+  .btn {                                               // Read More button
+    padding: 1rem;
+    // background-color: rgba($black, .1);
+    color: $black;
+    text-transform: uppercase;
+    font-weight: 700;
+
+    @include hover-focus-active {
+    }
+  }
+}
