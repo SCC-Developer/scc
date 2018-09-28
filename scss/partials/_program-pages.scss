@@ -1,0 +1,185 @@
+.progContent {
+
+  h4 {
+    // border-left: 6px solid $secondary;
+    // padding-left: .625rem;
+    &::before {
+      display: inline-block;
+      content: '';
+      height: 1.2rem;
+      width: 6px;
+      margin-right: .625rem;
+      background-color: $secondary;
+    }
+  }
+
+  #courseTab {
+    border-bottom: 1px solid $gray-300;
+  }
+}
+
+// Adding the space/line before every h4 in the tabs
+.tab-pane {
+  h4:not(:first-of-type) {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid $gray-200;
+  }
+}
+
+.progInfo {
+  padding-bottom: $pad-standard;
+  border-bottom:  1px solid $gray-200;
+  margin-bottom:  $pad-standard;
+
+  @include media-breakpoint-up(md) {
+    border: none;
+    padding-bottom: 0;
+    margin-bottom:  0;
+  };
+
+  &--btns {
+    .btn {
+      margin-bottom: 0.25rem;
+      @include media-breakpoint-up(lg) {
+        margin-bottom: 0.25rem;
+      };
+    }
+  }
+
+  &--details,
+  &--links {
+    border: 1px solid $gray-300;
+    margin: 1.25rem 0;
+    padding: 1.25rem;
+  }
+
+  &--links {
+    margin-bottom: 0;
+  }
+
+  &--details__new,
+  &--details__code,
+  &--details__length,
+  &--details__campus,
+  &--details__start,
+  &--details__status,
+  &--details__school,
+  &--details__vlos {
+    margin-bottom: 1rem;
+  }
+
+  &--details__start,
+  &--details__status,
+  &--details__contact {
+    strong {
+      display: block;
+    }
+  }
+
+  &--details__new {
+    font-weight: $fw-b;
+    text-transform: uppercase;
+
+    &::before {
+      @extend .f-fa;
+      content: "\f005";
+      color: $sc-gold;
+    }
+  }
+
+  &--details__school {
+    &::before {
+      @extend .f-fa;
+      content: "\f19c";
+    }
+  }
+
+  // &--details__vlos {
+  //   &::before {
+  //     content: '\f1c1';
+  //   }
+  // }
+
+  &--links__listing {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li:not(:last-child) {
+      margin-bottom: .75rem;
+    }
+
+    figure {
+      margin-bottom: 0;
+    }
+
+  }
+
+  &--group {
+    div {
+      display: inline-block;
+
+      &:not(:last-child) {
+        margin-right: 3rem;
+      }
+    }
+  }
+
+  &--video:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
+
+}
+
+.contact--email {
+  display: none;
+
+  @include media-breakpoint-up(lg) {
+    display: block;
+  };
+
+  &__mobile {
+    @include media-breakpoint-up(lg) {
+      display: none;
+    };
+  }
+}
+
+// Status indicators for the Program Info details
+.status {
+
+  &::before {
+    @extend .f-fa;
+    content: '\f0c8';
+  }
+
+  &--open {
+    &::before{
+      @extend .status;
+      color: lighten($green, 15%);
+    }
+  }
+
+  &--closed {
+    &::before {
+      @extend .status;
+      color: $red;
+    }
+  }
+
+  &--waitlisted {
+    &::before {
+      @extend .status;
+      color: $yellow;
+    }
+  }
+}
+
+.semester {
+  margin-bottom: 0;
+  background: $sc-green;
+  color: $white;
+  padding: 0.75rem;
+  border-bottom: 1px solid $white;
+}

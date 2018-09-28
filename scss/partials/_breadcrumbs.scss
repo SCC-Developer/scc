@@ -1,0 +1,14 @@
+.breadcrumbs {
+  background-color: $breadcrumb-bg;
+  display: none;
+  border-top: 1px solid $white;
+
+  @include media-breakpoint-up(sm) {
+    display: block;
+  }
+
+  .breadcrumb {
+    margin-bottom: 0;
+    padding: 0.75rem 0;
+  }
+}

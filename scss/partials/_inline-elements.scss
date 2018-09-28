@@ -1,0 +1,97 @@
+// Callouts
+
+.callout {
+  position: relative;
+  background-color: $brdr-main;
+  border: 1px solid $brdr-main;
+  border-bottom: 4px solid $primary;
+  transition: ease border-bottom .3s;
+  margin-bottom: 1rem;
+
+  a {
+    color: $body-color;
+
+    @include hover-focus-active {
+      text-decoration: none;
+    }
+  }
+
+  &--title {
+    padding: 2rem;
+    margin: 0;
+    text-align: center;
+    font-family: $headline;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    line-height: 1;
+    font-weight: 700;
+    @include media-breakpoint-up(lg) {
+      font-size: 1.75rem;
+    }
+  }
+
+  &--img {
+
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 0;
+    height: 4px;
+    background: $secondary;
+    transition: width .3s;
+  }
+
+  @include hover-focus-active {
+    border-bottom: 4px solid $secondary;
+    &::after {
+      width: 100%;
+    }
+  }
+
+}
+
+// Callouts with images
+.callout--w-img {
+
+  @include media-breakpoint-up(lg) {
+    a {
+      display: flex;
+    }
+
+    .callout--img {
+      max-width: 35%;
+    }
+
+    .callout--title {
+      align-self: center;
+      margin: 0 auto;
+    }
+  }
+}
+
+// Inline Images
+figure {
+  position: relative;
+  // background: $sc-green;
+
+  figcaption {
+    padding: 1rem 0;
+    // font-weight: $fw-sb;
+    // text-align: right;
+    font-style: italic;
+    border-bottom: 1px solid $brdr-main;
+    line-height: 1.25;
+
+    // @include media-breakpoint-up(lg) {
+    //   position: absolute;
+    //   bottom: 0;
+    //   width: 100%;
+    //   padding: 1rem 2rem;
+    //   background-color: rgba($black, 0.9);
+    //   color: $white;
+    // }
+  }
+}

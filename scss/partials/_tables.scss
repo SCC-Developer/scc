@@ -1,0 +1,42 @@
+.table {
+  thead {
+    background-color: $gray-300;
+
+    th {
+      border: 0;
+    }
+  }
+
+  tr {
+    &:nth-child(2n+2) {
+      background: $gray-100;
+    }
+  }
+
+  td {
+    border: 0;
+  }
+}
+
+.table--courselistings {
+  th {
+    &:nth-child(1) {
+      width: 18%;
+    }
+
+    &:nth-child(2) {
+      max-width: 62%;
+    }
+
+    &:nth-child(3) {
+      width: 20%;
+      text-align: center;
+    }
+  }
+
+  td {
+    &:nth-child(3) {
+      text-align: center;
+    }
+  }
+}

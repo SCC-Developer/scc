@@ -1,0 +1,19 @@
+.content {
+  overflow: hidden; //added for CTA's
+
+  // List items that need standard spacing
+  .standard-list {
+    li {
+      &:not(:last-child) {
+        margin-bottom: .75rem;
+      }
+    }
+  }
+
+}
+
+// For @extend ::before content;
+.f-fa {
+  font-family: "FontAwesome";
+  margin-right: .5rem;
+}

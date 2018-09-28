@@ -1,0 +1,44 @@
+.footer {
+  background-color: $footer-bg;
+  padding-top: 2.75rem;
+
+  // .footer--campus
+  &--campus {
+    margin-bottom: 0;
+    padding-bottom: 2.75rem;
+  }
+
+  h5 {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.fineprint {
+  background-color: $sc-gray;
+  color: $white;
+  padding: 1.5rem 0;
+  border-top: 2px solid $sc-gold;
+
+  p {
+    margin: 0;
+  }
+
+  a {
+    color: $white;
+  }
+
+  // .fineprint--menu
+  &--menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      margin: 0;
+      &:not(:last-child) {
+        margin-right: 1.5rem;
+      }
+    }
+  }
+}
